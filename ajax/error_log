@@ -1,0 +1,14 @@
+[10-Mar-2023 14:03:40 America/Santiago] SELECT i.idingreso, DATE(i.fecha_hora) as fecha, DATE(i.fecha_ven) as fecha_v, i.idproveedor, p.nombre as proveedor, 
+                    u.idusuario, u.nombre as usuario, i.tipo_comprobante, i.serie_comprobante, i.num_comprobante,    
+                    i.total_compra, i.impuesto, i.estado
+                FROM ingreso i
+                INNER JOIN persona p ON i.idproveedor = p.idpersona 
+                INNER JOIN usuario u ON i.idusuario = u.idusuario
+                WHERE idingreso='396'
+[10-Mar-2023 14:04:50 America/Santiago] SELECT i.idingreso, DATE(i.fecha_hora) as fecha, DATE(i.fecha_ven) as fecha_v, i.idproveedor, p.nombre as proveedor, 
+                    u.idusuario, u.nombre as usuario, i.tipo_comprobante, i.serie_comprobante, i.num_comprobante,    
+                    i.total_compra, i.impuesto, i.estado
+                FROM ingreso i
+                INNER JOIN persona p ON i.idproveedor = p.idpersona 
+                INNER JOIN usuario u ON i.idusuario = u.idusuario
+                WHERE idingreso='396'
